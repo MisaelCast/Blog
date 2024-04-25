@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar sesión</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .login-container h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .login-container input[type="password"] {
+      width: 94.4%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    .login-container input[type="button"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-container input[type="button"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="login-container">
+    <h2>Iniciar sesión</h2>
+    <form name="myForm" action="action_page.php" method="post">
+      <label for="clave">Ingrese una clave:</label>
+      <input type="password" id="clave" name="clave" required>
+      <br>
+      <input type="button" value="Confirmar" onClick="verificar()">
+    </form>
+  </div>
+
+  <script>
+    const contraseña = "casa123";
+
+    function verificar() {
+      var clave = document.getElementById("clave").value;
+
+      if (contraseña === clave) {
+        //vaciar el input
+        document.getElementById("clave").value = "";
+        alert("Bienvenido Usuario!!!");
+        window.location.href = "Index.html";
+
+      } else {
+        alert("La clave no es correcta, intente nuevamente!!!");
+        //vaciar el input
+        document.getElementById("clave").value = "";
+      }
+    }
+
+
+
+ // Agregar evento de escucha para el formulario Esto para aceptar la tecla Enter para llamara a la funcion 
+ document.querySelector("form").addEventListener("submit", function(event) {
+    // Prevenir el comportamiento predeterminado del formulario
+    event.preventDefault();
+    // Llamar a la función verificar()
+    verificar();
+  });
+  </script>
+</body>
+</html>

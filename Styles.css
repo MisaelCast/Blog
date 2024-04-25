@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Gris claro */
+}
+
+header {
+    background-color: #2ebb69; /* Verde esmeralda */
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-top: auto;
+    margin-right: auto; /* Empuja el título hacia la izquierda */
+    margin-bottom: 1px;
+    font-size: 50px;
+}
+
+h5{
+    margin-top: 0;
+    color: #ffffff;
+}
+
+img {
+    margin-left: 10px; /* Agrega un espacio entre el título y la imagen */
+}
+
+
+section {
+    text-align: center; /* Centra el contenido del section horizontalmente */
+}
+
+.uno{
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    margin-top: 30px;
+}
+
+h4 {
+    margin-top: 50px; 
+    color: #36b86c; /* Verde esmeralda */
+    text-align: center;
+}
+
+p {
+    color: #333; /* Negro */
+    line-height: 1.6;
+    padding: 0 200px;
+    margin-top: 10px; /* Reducir el espacio superior */
+    margin-bottom: 10px; /* Reducir el espacio inferior */
+}
+
+.linea {
+    text-align: center;
+}
+
+hr {
+    height: .1px;
+    background-color: #44b46f; /* Verde esmeralda */
+    border-color: #000000; /* Verde esmeralda */
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+table {
+    width: 80%;
+    margin: 1px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(255, 253, 253, 0.1);
+    margin-top: 50px;
+    border: none; /* Establecer el borde a ninguno */
+}   
+
+th, td {
+    border: 1px solid #ddd7d7;
+    padding: 8px;
+    text-align: center;
+}
+
+td{
+    font-size: 15px;
+}
+
+th {
+    background-color: #f2f2f2; /* Gris claro */
+}
+
+ul {
+    color: #333; /* Negro */
+    list-style-type: square;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 80px;
+    margin-top: 10px; /* Reducir el espacio superior */
+    margin-bottom: 10px; /* Reducir el espacio inferior */
+    margin-block-end: 50px;
+}
+
+
+footer {
+    background-color: #385c47; /* Verde esmeralda */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
